@@ -1,0 +1,10 @@
+@import '../core/Variables.scss';
+
+.profile__avatar {
+    width: 240px;
+    height: 200px;
+    margin: 10px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

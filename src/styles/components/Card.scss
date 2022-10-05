@@ -1,0 +1,90 @@
+@import '../core/variables';
+@import '../core/reset';
+
+.form {
+  width: 100%;
+  max-width: 329px;
+
+  flex-grow: 0;
+
+  margin: 0 auto;
+
+  .fieldset {
+    border-bottom: $colorWhiteTwo solid 1px;
+
+    margin: 30px 20px;
+
+    .legend {
+      width: 100%;
+      margin: 10px 0;
+
+      color: $colorCyberGrape;
+      font-size: 18px;
+      font-weight: 600;
+
+      display: flex;
+
+      cursor: pointer;
+
+      &__text {
+        margin-left: 10px;
+
+        flex-grow: 1;
+      }
+
+      &__icon {
+        width: 21px;
+        height: 18px;
+
+        font-size: 18px;
+
+        flex-grow: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__icon {
+        width: 21px;
+        height: 18px;
+
+        font-size: 18px;
+
+        flex-grow: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--orange {
+          color: $colorMetallicPink;
+        }
+
+        &--arrow {
+          color: $colorGunmetal;
+        }
+      }
+    }
+  }
+}
+.mainCreate {
+  background-image: linear-gradient(to bottom, &colorWhiteFour, &colorWhite 9%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media all and (min-width: 768px) {
+    padding: 20px 40px 20px 20px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+.collapsed {
+  display: none;
+}
+.rotate {
+  transform: rotate(540deg);
+}

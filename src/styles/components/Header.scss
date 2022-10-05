@@ -1,0 +1,14 @@
+@import '../core/variables';
+@import '../core/reset';
+.imageAwesome {
+  width: 200px;
+  height: 100px;
+  margin-left: 40px;
+  // margin: 30px 40px;
+
+  @media (min-width: 768px) {
+    width: 260px;
+    height: auto;
+}
+  }
+
